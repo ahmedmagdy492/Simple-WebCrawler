@@ -60,7 +60,7 @@ function getURLsFromHTML(htmlBody, baseURL) {
         urls.push(urlObj.href);
       }
       catch (err) {
-        console.log("Error with relative url: " + err.message);
+        console.log(`Error with relative url ${a.href}: ${err.message}`);
       }
     }
     else {
@@ -70,7 +70,7 @@ function getURLsFromHTML(htmlBody, baseURL) {
         urls.push(urlObj.href);
       }
       catch (err) {
-        console.log("Error with absoulte url: " + err.message);
+        console.log(`Error with absoulte url ${a.href}: ${err.message}`);
       }
     }
   });
