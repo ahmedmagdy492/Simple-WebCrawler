@@ -3,5 +3,6 @@ this is a simple crawler that will grab all the links on a page and then produce
 
 # Basic Usage
 ```bash
+npm install
 npm start <url>
 ```
